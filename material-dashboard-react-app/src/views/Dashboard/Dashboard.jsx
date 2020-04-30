@@ -217,7 +217,7 @@ class Dashboard extends React.Component {
               tabs={[
                 {
                   tabName: "Bugs",
-                  tabIcon: BugReport,
+                  //tabIcon: BugReport,
                   tabContent: (
                     <Tasks
                       checkedIndexes={[0, 3]}
@@ -228,7 +228,7 @@ class Dashboard extends React.Component {
                 },
                 {
                   tabName: "Website",
-                  tabIcon: Code,
+                  //tabIcon: Code,
                   tabContent: (
                     <Tasks
                       checkedIndexes={[0]}
@@ -239,7 +239,7 @@ class Dashboard extends React.Component {
                 },
                 {
                   tabName: "Server",
-                  tabIcon: Cloud,
+                  //tabIcon: Cloud,
                   tabContent: (
                     <Tasks
                       checkedIndexes={[1]}

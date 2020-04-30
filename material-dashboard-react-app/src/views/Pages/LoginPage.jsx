@@ -84,7 +84,7 @@ class LoginPage extends React.Component {
     }
 
     this.setState({
-      checked: newChecked
+      checked: newChecked,
     });
   };
   render() {
