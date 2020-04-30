@@ -104,6 +104,7 @@ class FixedPlugin extends Component {
               </a>
             </li>
             <li className="header-title">Images</li>
+            // eslint-disable-next-line
             <li className={this.state["bgImage"] === imagine1 ? "active" : ""}>
               <a
                 className="img-holder switch-trigger"
