@@ -10,6 +10,7 @@ import customCheckboxRadioSwitch from "assets/jss/material-dashboard-react/check
 
 const registerPageStyle = theme => ({
   ...customCheckboxRadioSwitch,
+  background: 'green',
   container: {
     paddingRight: "15px",
     paddingLeft: "15px",
