@@ -12,9 +12,10 @@ import Footer from "components/Footer/AuthFooter.jsx";
 import routes from "routes.js";
 
 import pagesStyle from "assets/jss/material-dashboard-react/layouts/authStyle.jsx";
-
 import register from "assets/img/register.jpeg";
 import plaza from "assets/img/plaza.jpg";
+import register from "assets/img/campus.jpg";
+import login from "assets/img/login.jpeg";
 
 const switchRoutes = (
   <Switch>
