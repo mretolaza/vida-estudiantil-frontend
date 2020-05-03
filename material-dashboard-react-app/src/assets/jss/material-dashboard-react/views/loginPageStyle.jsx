@@ -64,7 +64,7 @@ const loginPageStyle = theme => ({
     transform: "translate3d(0, -60px, 0)"
   },
   cardHeader: {
-    marginBottom: "20px"
+    marginBottom: "20px",
   },
   socialLine: {
     padding: "0.9375rem 0"

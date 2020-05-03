@@ -12,7 +12,8 @@ import Footer from "components/Footer/AuthFooter.jsx";
 import routes from "routes.js";
 
 import pagesStyle from "assets/jss/material-dashboard-react/layouts/authStyle.jsx";
-
+import register from "assets/img/register.jpeg";
+import plaza from "assets/img/plaza.jpg";
 import register from "assets/img/campus.jpg";
 import login from "assets/img/login.jpeg";
 
@@ -41,7 +42,7 @@ class Pages extends React.Component {
     if (window.location.pathname.indexOf("/auth/register-page") !== -1) {
       return register;
     } else if (window.location.pathname.indexOf("/auth/login-page") !== -1) {
-      return login;
+      return plaza;
     }
   };
   getActiveRoute = routes => {
