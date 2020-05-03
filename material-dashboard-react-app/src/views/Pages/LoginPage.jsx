@@ -104,12 +104,12 @@ class LoginPage extends React.Component {
           <GridItem xs={12} sm={6} md={4}>
             <form onSubmit={this.login}>
               <Card className={classes[this.state.cardAnimaton]}>
-                <CardHeader
+                {/*<CardHeader
                   className={`${classes.cardHeader} ${classes.textCenter}`}
                   color="primary"
                 >
-                  <h4 className={classes.cardTitle}>Log in</h4>
-                  <div className={classes.socialLine}>
+                  <h4 className={classes.cardTitle}>Ingresa</h4>
+                  <div className={classes.socialLine}>  
                     {[
                       "fa fa-facebook-square",
                       "fa fa-twitter",
@@ -126,9 +126,14 @@ class LoginPage extends React.Component {
                         </Button>
                       );
                     })}
-                  </div>
-                </CardHeader>
+                  </div> 
+                </CardHeader>*/}
                 <CardBody>
+                  <img src="assets/img/logoblanco.jpg" 
+                  alt="La cabeza y el torso de un esqueleto de dinosaurio;
+                  tiene una cabeza grande con dientes largos y afilados"
+                  width="100"
+                  height="200"></img>
                   <p
                     className={`${classes.textCenter} ${classes.checkboxLabel}`}
                   >
