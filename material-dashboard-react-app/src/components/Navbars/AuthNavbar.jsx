@@ -56,7 +56,7 @@ class AuthNavbar extends React.Component {
           <NavLink to={"/admin/dashboard"} className={classes.navLink}>
             <Dashboard className={classes.listItemIcon} />
             <ListItemText
-              primary={"Dashboard"}
+              primary={"Tablero"}
               disableTypography={true}
               className={classes.listItemText}
             />
@@ -71,7 +71,7 @@ class AuthNavbar extends React.Component {
           >
             <PersonAdd className={classes.listItemIcon} />
             <ListItemText
-              primary={"Register"}
+              primary={"Registro"}
               disableTypography={true}
               className={classes.listItemText}
             />
@@ -86,7 +86,7 @@ class AuthNavbar extends React.Component {
           >
             <Fingerprint className={classes.listItemIcon} />
             <ListItemText
-              primary={"Login"}
+              primary={"Ingresar"}
               disableTypography={true}
               className={classes.listItemText}
             />
@@ -100,14 +100,7 @@ class AuthNavbar extends React.Component {
           <Hidden smDown>
             <div className={classes.flex}>
               <Button href="#" className={classes.title} color="transparent">
-                {brandText}
-              </Button>
-            </div>
-          </Hidden>
-          <Hidden mdUp>
-            <div className={classes.flex}>
-              <Button href="#" className={classes.title} color="transparent">
-                MD Pro React
+                
               </Button>
             </div>
           </Hidden>

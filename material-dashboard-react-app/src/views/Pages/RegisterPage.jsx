@@ -161,37 +161,10 @@ class RegisterPage extends React.Component {
                       )
                     }}
                   />
-                  <FormControlLabel
-                    classes={{
-                      root:
-                        classes.checkboxLabelControl +
-                        " " +
-                        classes.checkboxLabelControlClassName,
-                      label: classes.checkboxLabel
-                    }}
-                    control={
-                      <Checkbox
-                        tabIndex={-1}
-                        onClick={() => this.handleToggle(1)}
-                        checkedIcon={<Check className={classes.checkedIcon} />}
-                        icon={<Check className={classes.uncheckedIcon} />}
-                        required
-                        classes={{
-                          checked: classes.checked,
-                          root: classes.checkRoot
-                        }}
-                      />
-                    }
-                    label={
-                      <span>
-                        I agree with the <a href="#pablo">Privacy Policy</a>.
-                      </span>
-                    }
-                  />
                 </CardBody>
                 <CardFooter className={classes.justifyContentCenter}>
-                  <Button type="submit" color="primary" simple size="lg" block>
-                    Let's Go
+                  <Button type="submit" color="success" simple size="lg" block>
+                    Registrar
                   </Button>
                 </CardFooter>
               </Card>
