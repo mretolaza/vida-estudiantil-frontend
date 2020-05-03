@@ -25,6 +25,8 @@ import CardFooter from "components/Card/CardFooter.jsx";
 
 import loginPageStyle from "assets/jss/material-dashboard-react/views/loginPageStyle.jsx";
 
+import logo from "assets/img/logo004.png";
+
 const { REACT_APP_SERVER_URL } = process.env;
 
 class LoginPage extends React.Component {
@@ -104,11 +106,12 @@ class LoginPage extends React.Component {
           <GridItem xs={12} sm={6} md={4}>
             <form onSubmit={this.login}>
               <Card className={classes[this.state.cardAnimaton]}>
-                {/*<CardHeader
+                <CardHeader
                   className={`${classes.cardHeader} ${classes.textCenter}`}
                   color="primary"
                 >
                   <h4 className={classes.cardTitle}>Ingresa</h4>
+                  <img src={logo} height="100" width="100"/>
                   <div className={classes.socialLine}>  
                     {[
                       "fa fa-facebook-square",
@@ -127,21 +130,16 @@ class LoginPage extends React.Component {
                       );
                     })}
                   </div> 
-                </CardHeader>*/}
+                </CardHeader>
                 <CardBody>
-                  <img src="assets/img/logoblanco.jpg" 
-                  alt="La cabeza y el torso de un esqueleto de dinosaurio;
-                  tiene una cabeza grande con dientes largos y afilados"
-                  width="100"
-                  height="200"></img>
-                  <p
+                  {/*<p
                     className={`${classes.textCenter} ${classes.checkboxLabel}`}
                   >
                     Or Sign in with <strong>admin@material.com</strong> and the
                     password <strong>secret</strong>{" "}
-                  </p>
+                  </p>*/}
                   <CustomInput
-                    labelText="Email..."
+                    labelText="Correo"
                     id="email"
                     error={errors.username || errors.invalidEmailOrPassword}
                     formControlProps={{
@@ -159,7 +157,7 @@ class LoginPage extends React.Component {
                     }}
                   />
                   <CustomInput
-                    labelText="Password"
+                    labelText="Contraseña"
                     id="password"
                     error={errors.password || errors.invalidEmailOrPassword}
                     formControlProps={{
@@ -203,7 +201,7 @@ class LoginPage extends React.Component {
                 </CardBody>
                 <CardFooter className={classes.justifyContentCenter}>
                   <Button type="submit" color="primary" simple size="lg" block>
-                    Let's Go
+                    Ingresar
                   </Button>
                 </CardFooter>
               </Card>
