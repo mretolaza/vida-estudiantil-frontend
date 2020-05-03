@@ -46,13 +46,6 @@ const registerPageStyle = theme => ({
   justifyContentCenter: {
     justifyContent: "center !important"
   },
-  customButtonClass: {
-    "&,&:focus,&:hover": {
-      color: whiteColor
-    },
-    marginLeft: "5px",
-    marginRight: "5px"
-  },
   inputAdornment: {
     marginRight: "18px"
   },

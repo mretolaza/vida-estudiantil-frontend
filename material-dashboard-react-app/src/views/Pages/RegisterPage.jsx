@@ -97,32 +97,15 @@ class RegisterPage extends React.Component {
               <Card className={classes[this.state.cardAnimaton]}>
                 <CardHeader
                   className={`${classes.cardHeader} ${classes.textCenter}`}
-                  color="primary"
+                  color="success"
                 >
-                  <h4 className={classes.cardTitle}>Register</h4>
-                  <div className={classes.socialLine}>
-                    {[
-                      "fa fa-facebook-square",
-                      "fa fa-twitter",
-                      "fa fa-google-plus"
-                    ].map((prop, key) => {
-                      return (
-                        <Button
-                          color="transparent"
-                          justIcon
-                          key={key}
-                          className={classes.customButtonClass}
-                        >
-                          <i className={prop} />
-                        </Button>
-                      );
-                    })}
-                  </div>
+                  <h4 className={classes.cardTitle}>Registro</h4>
+                  
                 </CardHeader>
                 <CardBody>
-                  <p className={classes.cardDescription}>Or Be Classical</p>
+                  <p className={classes.cardDescription}>Crear Nuevo Usuario</p>
                   <CustomInput
-                    labelText="Name..."
+                    labelText="Nombre..."
                     id="name"
                     formControlProps={{
                       fullWidth: true,
@@ -139,7 +122,7 @@ class RegisterPage extends React.Component {
                     }}
                   />
                   <CustomInput
-                    labelText="Email..."
+                    labelText="Correo..."
                     id="email"
                     formControlProps={{
                       fullWidth: true,
@@ -158,7 +141,7 @@ class RegisterPage extends React.Component {
                     }}
                   />
                   <CustomInput
-                    labelText="Password..."
+                    labelText="Contraseña..."
                     id="password"
                     formControlProps={{
                       fullWidth: true,
