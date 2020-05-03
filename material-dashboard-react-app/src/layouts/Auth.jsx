@@ -14,7 +14,7 @@ import routes from "routes.js";
 import pagesStyle from "assets/jss/material-dashboard-react/layouts/authStyle.jsx";
 
 import register from "assets/img/register.jpeg";
-import login from "assets/img/login.jpeg";
+import plaza from "assets/img/plaza.jpg";
 
 const switchRoutes = (
   <Switch>
@@ -41,7 +41,7 @@ class Pages extends React.Component {
     if (window.location.pathname.indexOf("/auth/register-page") !== -1) {
       return register;
     } else if (window.location.pathname.indexOf("/auth/login-page") !== -1) {
-      return login;
+      return plaza;
     }
   };
   getActiveRoute = routes => {
