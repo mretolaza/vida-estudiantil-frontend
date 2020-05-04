@@ -12,6 +12,7 @@ import Footer from "components/Footer/AuthFooter.jsx";
 import routes from "routes.js";
 
 import pagesStyle from "assets/jss/material-dashboard-react/layouts/authStyle.jsx";
+
 import plaza from "assets/img/plaza.jpg";
 import register from "assets/img/campus.jpg";
 
