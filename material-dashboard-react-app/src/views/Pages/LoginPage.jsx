@@ -95,14 +95,6 @@ class LoginPage extends React.Component {
     return (
       <div className={classes.container}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={8}>
-            <h4 className={classes.textCenter} style={{ marginTop: 0 }}>
-              Log in to see how you can speed up your web development with out
-              of the box CRUD for #User Management and more.{" "}
-            </h4>
-          </GridItem>
-        </GridContainer>
-        <GridContainer justify="center">
           <GridItem xs={12} sm={6} md={4}>
             <form onSubmit={this.login}>
               <Card className={classes[this.state.cardAnimaton]}>
@@ -110,9 +102,9 @@ class LoginPage extends React.Component {
                   className={`${classes.cardHeader} ${classes.textCenter}`}
                   color="primary"
                 >
-                  <h4 className={classes.cardTitle}>Ingresa</h4>
-                  <img src={logo} height="100" width="100"/>
-                  <div className={classes.socialLine}>  
+                  <h4 className={classes.cardTitle}>Inicio de sesión</h4>
+                  <img src={logo} height="100" width="210"/>
+                  {/* <div className={classes.socialLine}>  
                     {[
                       "fa fa-facebook-square",
                       "fa fa-twitter",
@@ -129,7 +121,7 @@ class LoginPage extends React.Component {
                         </Button>
                       );
                     })}
-                  </div> 
+                  </div> */}
                 </CardHeader>
                 <CardBody>
                   {/*<p
@@ -176,6 +168,8 @@ class LoginPage extends React.Component {
                       )
                     }}
                   />
+                  <a>Olvidé mi contraseña</a>
+                  <br></br>
                   <FormControlLabel
                     classes={{
                       root:
@@ -196,11 +190,11 @@ class LoginPage extends React.Component {
                         }}
                       />
                     }
-                    label={<span>Remember me</span>}
+                    label={<span>Recuérdame</span>}
                   />
                 </CardBody>
                 <CardFooter className={classes.justifyContentCenter}>
-                  <Button type="submit" color="primary" simple size="lg" block>
+                  <Button type="submit" color="success" simple size="lg" block>
                     Ingresar
                   </Button>
                 </CardFooter>
