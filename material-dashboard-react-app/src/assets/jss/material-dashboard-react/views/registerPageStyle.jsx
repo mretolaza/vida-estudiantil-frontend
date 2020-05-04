@@ -62,7 +62,7 @@ const registerPageStyle = theme => ({
   },
   cardDescription: {
     textAlign: "center",
-    color: grayColor[0],
+    color: grayColor[1],
     marginTop: 0,
     marginBottom: "1rem"
   },

@@ -15,7 +15,6 @@ import pagesStyle from "assets/jss/material-dashboard-react/layouts/authStyle.js
 
 import plaza from "assets/img/plaza.jpg";
 import register from "assets/img/campus.jpg";
-import login from "assets/img/login.jpeg";
 
 const switchRoutes = (
   <Switch>
