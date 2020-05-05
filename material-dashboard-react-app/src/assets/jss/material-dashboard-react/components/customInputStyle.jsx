@@ -5,6 +5,7 @@ import {
   grayColor,
   defaultFont
 } from "assets/jss/material-dashboard-react.jsx";
+import { green } from "@material-ui/core/colors";
 
 const customInputStyle = {
   disabled: {
@@ -15,10 +16,10 @@ const customInputStyle = {
   underline: {
     "&:hover:not($disabled):before,&:before": {
       borderColor: grayColor[4] + " !important",
-      borderWidth: "1px !important"
+      borderWidth: "1px !important",
     },
     "&:after": {
-      borderColor: primaryColor[0]
+      borderColor: "green"
     }
   },
   underlineError: {

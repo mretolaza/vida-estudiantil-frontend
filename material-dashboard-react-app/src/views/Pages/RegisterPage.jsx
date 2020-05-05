@@ -13,6 +13,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Email from "@material-ui/icons/Email";
 import Check from "@material-ui/icons/Check";
 import Face from "@material-ui/icons/Face";
+import logo from "assets/img/logo004.png";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -97,10 +98,10 @@ class RegisterPage extends React.Component {
               <Card className={classes[this.state.cardAnimaton]}>
                 <CardHeader
                   className={`${classes.cardHeader} ${classes.textCenter}`}
-                  color="success"
+                  color="primary"
                 >
                   <h4 className={classes.cardTitle}>Registro</h4>
-                  
+                  <img src={logo} height="100" width="210"/>
                 </CardHeader>
                 <CardBody>
                   <p className={classes.cardDescription}>Crear Nuevo Usuario</p>
