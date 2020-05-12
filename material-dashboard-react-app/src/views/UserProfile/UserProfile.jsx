@@ -14,7 +14,7 @@ import CardAvatar from "components/Card/CardAvatar.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "assets/img/logocuadrado.jpg";
 
 const styles = {
   cardCategoryWhite: {
@@ -48,7 +48,7 @@ class UserProfile extends React.Component {
   async updateProfile(e) {
     e.preventDefault();
 
-    const fields = ["name", "username"];
+    const fields = ["nombre", "correo", "horas-beca", "carrera", "carnet", "genero", "facultad"];
     const formElements = e.target.elements;
     const formValues = fields
       .map(field => ({
@@ -80,7 +80,7 @@ class UserProfile extends React.Component {
     }
   }
   render() {
-    const { classes, name, email } = this.props;
+    const { classes, nombre, correo, horasbeca, carrera, carnet, genero, facultad } = this.props;
     const { errors } = this.state;
     return (
       <div>
@@ -89,48 +89,123 @@ class UserProfile extends React.Component {
             <form onSubmit={this.updateProfile}>
               <Card>
                 <CardHeader color="primary">
-                  <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
+                  <h4 className={classes.cardTitleWhite}>Editar Perfil</h4>
                   <p className={classes.cardCategoryWhite}>
-                    Complete your profile
+                    Personaliza tu perfil
                   </p>
                 </CardHeader>
                 <CardBody>
                   <GridContainer>
                     <GridItem xs={12} sm={12} md={3}>
                       <CustomInput
-                        labelText="Name"
-                        id="name"
+                        labelText="Nombre"
+                        id="nombre"
                         error={errors.name}
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           required: true,
-                          defaultValue: name,
-                          name: "name"
+                          defaultValue: nombre,
+                          name: "nombre"
                         }}
                       />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4}>
                       <CustomInput
-                        labelText="Email address"
-                        id="email-address"
+                        labelText="Correo"
+                        id="correo"
                         error={errors.username}
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           required: true,
-                          defaultValue: email,
-                          name: "username"
+                          defaultValue: correo,
+                          name: "correo"
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={5}>
+                      <CustomInput
+                        labelText="Horas Beca"
+                        id="horas-beca"
+                        error={errors.name}
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          required: true,
+                          defaultValue: horasbeca,
+                          name: "horas-beca"
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="Carrera"
+                        id="carrera"
+                        error={errors.name}
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          required: true,
+                          defaultValue: carrera,
+                          name: "carrera"
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="Carnet"
+                        id="carnet"
+                        error={errors.name}
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          required: true,
+                          defaultValue: carnet,
+                          name: "carnet"
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="Facultad"
+                        id="facultad"
+                        error={errors.name}
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          required: true,
+                          defaultValue: facultad,
+                          name: "facultad"
+                        }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="Genero (F/M)"
+                        id="genero"
+                        error={errors.name}
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          required: true,
+                          defaultValue: genero,
+                          name: "genero"
                         }}
                       />
                     </GridItem>
                   </GridContainer>
                 </CardBody>
                 <CardFooter>
-                  <Button type="submit" color="primary">
-                    Update Profile
+                  <Button type="submit" color="success">
+                    Actualizar
                   </Button>
                 </CardFooter>
               </Card>
@@ -144,16 +219,12 @@ class UserProfile extends React.Component {
                 </a>
               </CardAvatar>
               <CardBody profile>
-                <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-                <h4 className={classes.cardTitle}>Alec Thompson</h4>
+                <h4 className={classes.cardTitle}>Queremos saber más de ti</h4>
                 <p className={classes.description}>
-                  Don't be scared of the truth because we need to restart the
-                  human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Por ser la primera vez que ingresas a la plataforma necesitamos
+                  que añadas algun datos personales. Asegúrate de escribirlos
+                  correctamente
                 </p>
-                <Button color="primary" round>
-                  Follow
-                </Button>
               </CardBody>
             </Card>
           </GridItem>

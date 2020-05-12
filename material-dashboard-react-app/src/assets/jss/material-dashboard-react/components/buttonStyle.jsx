@@ -249,7 +249,7 @@ const buttonStyle = {
     },
     "&$success": {
       "&,&:focus,&:hover,&:visited": {
-        color: successColor[0]
+        color: successColor[3]
       }
     },
     "&$warning": {
