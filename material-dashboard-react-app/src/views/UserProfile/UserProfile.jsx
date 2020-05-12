@@ -48,7 +48,7 @@ class UserProfile extends React.Component {
   async updateProfile(e) {
     e.preventDefault();
 
-    const fields = ["nombre", "correo", "horas-beca", "carrera", "carnet", "genero", "facultad"];
+    const fields = ["name", "username", "horas_beca", "carrera", "carne", "genero", "facultad"];
     const formElements = e.target.elements;
     const formValues = fields
       .map(field => ({
@@ -80,7 +80,7 @@ class UserProfile extends React.Component {
     }
   }
   render() {
-    const { classes, nombre, correo, horasbeca, carrera, carnet, genero, facultad } = this.props;
+    const { classes, name, email, horas_beca, carrera, carne, genero, facultad } = this.props;
     const { errors } = this.state;
     return (
       <div>
@@ -99,45 +99,45 @@ class UserProfile extends React.Component {
                     <GridItem xs={12} sm={12} md={3}>
                       <CustomInput
                         labelText="Nombre"
-                        id="nombre"
+                        id="name"
                         error={errors.name}
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           required: true,
-                          defaultValue: nombre,
-                          name: "nombre"
+                          defaultValue: name,
+                          name: "name"
                         }}
                       />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4}>
                       <CustomInput
                         labelText="Correo"
-                        id="correo"
+                        id="email-address"
                         error={errors.username}
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           required: true,
-                          defaultValue: correo,
-                          name: "correo"
+                          defaultValue: email,
+                          name: "username"
                         }}
                       />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={5}>
                       <CustomInput
                         labelText="Horas Beca"
-                        id="horas-beca"
+                        id="horas_beca"
                         error={errors.name}
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           required: true,
-                          defaultValue: horasbeca,
-                          name: "horas-beca"
+                          defaultValue: horas_beca,
+                          name: "horas_beca"
                         }}
                       />
                     </GridItem>
@@ -159,15 +159,15 @@ class UserProfile extends React.Component {
                     <GridItem xs={12} sm={12} md={6}>
                       <CustomInput
                         labelText="Carnet"
-                        id="carnet"
+                        id="carne"
                         error={errors.name}
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           required: true,
-                          defaultValue: carnet,
-                          name: "carnet"
+                          defaultValue: carne,
+                          name: "carne"
                         }}
                       />
                     </GridItem>
