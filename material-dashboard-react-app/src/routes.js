@@ -10,6 +10,7 @@ import UserProfile from "views/UserProfile/UserProfile.jsx";
 import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
 import ForgotPass from "views/Pages/ForgotPass.jsx"
+import UpdatePass from "views/Pages/changePass.jsx"
 
 const dashboardRoutes = [
   {
@@ -45,6 +46,13 @@ const dashboardRoutes = [
     name: "Olvidé mi contraseña",
     icon: "vpn_key",
     component: ForgotPass,
+    layout: "/auth"
+  }, 
+  {
+    path: "/chance-pass-page",
+    name: "Actualizar mi contraseña",
+    icon: "vpn_key",
+    component: UpdatePass,
     layout: "/auth"
   }
 ];

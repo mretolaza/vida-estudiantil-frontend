@@ -5,10 +5,7 @@ import axios from "axios";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
-
-
-// @material-ui/icons
-import Email from "@material-ui/icons/Email";
+import Icon from "@material-ui/core/Icon";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -24,7 +21,7 @@ import loginPageStyle from "assets/jss/material-dashboard-react/views/loginPageS
 
 const { REACT_APP_SERVER_URL } = process.env;
 
-class ForgotPassPage extends React.Component {
+class ChangePassPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,7 +29,7 @@ class ForgotPassPage extends React.Component {
             errors: {}
         };
     }
-    forgotPass = async e => {
+    changePass = async e => {
         e.preventDefault();
 
         const { history } = this.props;
@@ -46,10 +43,10 @@ class ForgotPassPage extends React.Component {
             }))
             .reduce((current, next) => ({ ...current, ...next }));
 
-        let forgotPassRequest;
+        let changePassRequest;
         try {
-            forgotPassRequest = await axios.post(
-                `http://${REACT_APP_SERVER_URL}/forgot-pass`,
+            changePassRequest = await axios.post(
+                `http://${REACT_APP_SERVER_URL}/update-pass`,
                 {
                     ...formValues
                 },
@@ -58,15 +55,15 @@ class ForgotPassPage extends React.Component {
                 }
             );
         } catch ({ response }) {
-            forgotPassRequest = response;
+            changePassRequest = response;
         }
-        const { data: forgotPassRequestData } = forgotPassRequest;
-        if (forgotPassRequestData.success) {
+        const { data: changePassRequestData } = changePassRequest;
+        if (changePassRequestData.success) {
             return history.push("/auth");
         }
 
         this.setState({
-            errors: forgotPassRequestData.messages && forgotPassRequestData.messages.errors
+            errors: changePassRequestData.messages && changePassRequestData.messages.errors
         });
     };
     handleToggle = value => {
@@ -91,30 +88,56 @@ class ForgotPassPage extends React.Component {
             <div className={classes.container}>
                 <GridContainer justify="center">
                     <GridItem xs={12} sm={6} md={4}>
-                        <form onSubmit={this.forgotPass}>
+                        <form onSubmit={this.changePass}>
                             <Card className={classes[this.state.cardAnimaton]}>
                                 <CardHeader
                                     className={`${classes.cardHeader} ${classes.textCenter}`}
                                     color="primary"
                                 >
-                                    <h4 className={classes.cardTitle}>Olvidé mí contraseña</h4>
+                                    <h4 className={classes.cardTitle}>Actualizar mi contraseña</h4>
                                 </CardHeader>
                                 <br></br>
                                 <CardBody>
                                     <CustomInput
-                                        labelText="Correo"
-                                        id="email"
-                                        error={errors.username || errors.invalidEmailOrPassword}
+                                        labelText="Ingresar nueva contraseña"
+                                        id="password"
+                                        error={errors.password || errors.invalidEmailOrPassword}
                                         formControlProps={{
                                             fullWidth: true,
                                             className: classes.formControlClassName
                                         }}
                                         inputProps={{
+                                            type: "password",
                                             required: true,
-                                            name: "username",
                                             endAdornment: (
                                                 <InputAdornment position="end">
-                                                    <Email className={classes.inputAdornmentIcon} />
+                                                    <Icon className={classes.inputAdornmentIcon}>
+                                                        lock_outline
+                                                    </Icon>
+                                                </InputAdornment>
+                                            )
+                                        }}
+                                    />
+                                    <br></br>
+                                </CardBody>
+                                <br></br>
+                                <CardBody>
+                                    <CustomInput
+                                        labelText="Confirmar contraseña"
+                                        id="password"
+                                        error={errors.password || errors.invalidEmailOrPassword}
+                                        formControlProps={{
+                                            fullWidth: true,
+                                            className: classes.formControlClassName
+                                        }}
+                                        inputProps={{
+                                            type: "password",
+                                            required: true,
+                                            endAdornment: (
+                                                <InputAdornment position="end">
+                                                    <Icon className={classes.inputAdornmentIcon}>
+                                                        lock_outline
+                                                    </Icon>
                                                 </InputAdornment>
                                             )
                                         }}
@@ -123,7 +146,7 @@ class ForgotPassPage extends React.Component {
                                 </CardBody>
                                 <CardFooter className={classes.justifyContentCenter}>
                                     <Button type="submit" color="success" simple size="lg" block>
-                                        Recuperar contraseña
+                                        Actualizar mi contraseña
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -135,10 +158,10 @@ class ForgotPassPage extends React.Component {
     }
 }
 
-ForgotPassPage.propTypes = {
+ChangePassPage.propTypes = {
     classes: PropTypes.object.isRequired,
     history: PropTypes.object,
     errors: PropTypes.object
 };
 
-export default withStyles(loginPageStyle)(ForgotPassPage);
+export default withStyles(loginPageStyle)(ChangePassPage);
