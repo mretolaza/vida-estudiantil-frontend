@@ -1,7 +1,7 @@
 {
   "name": "material-dashboard-react",
   "version": "1.6.0",
-  "description": "Material Dashboard React. Coded by Creative Tim",
+  "description": "Proyecto de unidad de vida estudiantil",
   "private": false,
   "main": "dist/index.js",
   "dependencies": {
@@ -42,14 +42,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard-react-nodejs.git"
+    "url": "git+"
   },
   "keywords": [],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "Mean Girls",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues"
-  },
   "homepage": "/",
   "optionalDependencies": {
     "@types/googlemaps": "3.30.16",
