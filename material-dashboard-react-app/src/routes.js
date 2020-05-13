@@ -9,6 +9,7 @@ import UserProfile from "views/UserProfile/UserProfile.jsx";
 // core components/views for Auth layout
 import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
+import ForgotPass from "views/Pages/ForgotPass.jsx"
 
 const dashboardRoutes = [
   {
@@ -27,16 +28,23 @@ const dashboardRoutes = [
   },
   {
     path: "/login-page",
-    name: "Login Page",
+    name: "Inicio de sesión",
     icon: Login,
     component: LoginPage,
     layout: "/auth"
   },
   {
     path: "/register-page",
-    name: "Register Page",
+    name: "Registro",
     icon: Register,
     component: RegisterPage,
+    layout: "/auth"
+  },
+  {
+    path: "/forgot-pass-page",
+    name: "Olvidé mi contraseña",
+    icon: "vpn_key",
+    component: ForgotPass,
     layout: "/auth"
   }
 ];
