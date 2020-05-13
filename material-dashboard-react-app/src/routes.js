@@ -1,13 +1,11 @@
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
-import Notifications from "@material-ui/icons/Notifications";
 import Register from "@material-ui/icons/GroupAdd";
 import Login from "@material-ui/icons/LockOpen";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import NotificationsPage from "views/Notifications/Notifications.jsx";
 // core components/views for Auth layout
 import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
@@ -18,13 +16,6 @@ const dashboardRoutes = [
     name: "Administrador",
     icon: Dashboard,
     component: DashboardPage,
-    layout: "/admin"
-  },
-  {
-    path: "/notifications",
-    name: "Notificaciones",
-    icon: Notifications,
-    component: NotificationsPage,
     layout: "/admin"
   },
   {
