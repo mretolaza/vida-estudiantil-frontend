@@ -1,13 +1,5 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-import { NavLink } from "react-router-dom";
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  FacebookIcon,
-  TwitterIcon
-} from "react-share";
-import GitHubButton from "react-github-button";
 
 import imagine1 from "assets/img/sidebar-1.jpg";
 import imagine2 from "assets/img/sidebar-2.jpg";
@@ -41,7 +33,7 @@ class FixedPlugin extends Component {
             <i className="fa fa-cog fa-2x" />
           </div>
           <ul className="dropdown-menu">
-            <li className="header-title">SIDEBAR FILTERS</li>
+            <li className="header-title">Ajustes del sistema</li>
             <li className="adjustments-line">
               <a className="switch-trigger">
                 <div>
@@ -103,8 +95,7 @@ class FixedPlugin extends Component {
                 </div>
               </a>
             </li>
-            <li className="header-title">Images</li>
-            // eslint-disable-next-line
+            <li className="header-title">Imagenes</li>
             <li className={this.state["bgImage"] === imagine1 ? "active" : ""}>
               <a
                 className="img-holder switch-trigger"
@@ -149,68 +140,23 @@ class FixedPlugin extends Component {
                 <img src={imagine4} alt="..." />
               </a>
             </li>
-
-            <li className="button-container">
-              <div className="button-container">
-                <Button
-                  color="success"
-                  href="https://www.creative-tim.com/product/material-dashboard-react-nodejs"
-                  target="_blank"
-                  fullWidth
-                >
-                  Download free!
-                </Button>
-              </div>
-            </li>
             <li className="button-container">
               <div className="button-container">
                 <Button
                   color="warning"
                   disabled
-                  // href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+                  href="https://github.com/mretolaza/vida-estudiantil-frontend/issues"
                   target="_blank"
                   fullWidth
                 >
-                  Get PRO version
+                  Contacto con soporte
                 </Button>
               </div>
             </li>
-            <li className="button-container">
-              <NavLink to={"../documentation"} activeClassName="active">
-                <Button color="info" fullWidth>
-                  Documentation
-                </Button>
-              </NavLink>
-            </li>
+           
 
             <li className="header-title" id="sharrreTitle">
-              Thank you for sharing!
-            </li>
-
-            <li className="button-container">
-              <FacebookShareButton url="https://creativetimofficial.github.io/material-dashboard-react">
-                <FacebookIcon size={32} round={true} />
-              </FacebookShareButton>
-              <TwitterShareButton
-                url="https://creativetimofficial.github.io/material-dashboard-react"
-                title="Material Dashboard React - Free Bootstrap Admin Template"
-                hashtags={["react", "material-ui"]}
-                via="creativetim"
-              >
-                <TwitterIcon size={32} round={true} />
-              </TwitterShareButton>
-            </li>
-            <li className="button-container">
-              <GitHubButton
-                type="stargazers"
-                namespace="creativetimofficial"
-                repo="material-dashboard-react-nodejs"
-              />
-              <GitHubButton
-                type="forks"
-                namespace="creativetimofficial"
-                repo="material-dashboard-react-nodejs"
-              />
+              Power By: Mean Girls
             </li>
           </ul>
         </div>
