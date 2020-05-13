@@ -16,22 +16,17 @@ function Footer({ ...props }) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a href="#home" className={classes.block}>
-                Home
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a href="#company" className={classes.block}>
-                Company
+                Universidad del Valle de Guatemala
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a href="#portfolio" className={classes.block}>
-                Portfolio
+                Canvas UVG
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a href="#blog" className={classes.block}>
-                Blog
+                Portal UVG
               </a>
             </ListItem>
           </List>
@@ -39,14 +34,9 @@ function Footer({ ...props }) {
         <p className={classes.right}>
           <span>
             &copy; {1900 + new Date().getYear()} made with love, by{" "}
-            <a href="https://www.creative-tim.com" className={classes.a}>
-              Creative Tim
-            </a>{" "}
-            and{" "}
-            <a href="https://udevoffice.com/" className={classes.a}>
-              Udevoffice
-            </a>{" "}
-            for a better web
+            <a href="" className={classes.a}>
+              Mean Girls
+            </a>
           </span>
         </p>
       </div>

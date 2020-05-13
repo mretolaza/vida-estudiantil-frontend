@@ -103,33 +103,9 @@ class LoginPage extends React.Component {
                   color="primary"
                 >
                   <h4 className={classes.cardTitle}>Inicio de sesión</h4>
-                  <img src={logo} height="100" width="210"/>
-                  {/* <div className={classes.socialLine}>  
-                    {[
-                      "fa fa-facebook-square",
-                      "fa fa-twitter",
-                      "fa fa-google-plus"
-                    ].map((prop, key) => {
-                      return (
-                        <Button
-                          color="transparent"
-                          justIcon
-                          key={key}
-                          className={classes.customButtonClass}
-                        >
-                          <i className={prop} />
-                        </Button>
-                      );
-                    })}
-                  </div> */}
+                  <img src={logo} height="100" width="210" />
                 </CardHeader>
                 <CardBody>
-                  {/*<p
-                    className={`${classes.textCenter} ${classes.checkboxLabel}`}
-                  >
-                    Or Sign in with <strong>admin@material.com</strong> and the
-                    password <strong>secret</strong>{" "}
-                  </p>*/}
                   <CustomInput
                     labelText="Correo"
                     id="email"
