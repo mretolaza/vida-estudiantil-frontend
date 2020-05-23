@@ -16,6 +16,7 @@ import AlertPage from "views/Pages/alertPage.jsx";
 import NewTeamPage from "views/Pages/NewTeamPage.jsx";
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
+import NewTallerPage from "./views/Pages/newTallerPage";
 
 const dashboardRoutes = [
   {
@@ -81,6 +82,13 @@ const dashboardRoutes = [
     component: NewTeamPage,
     layout: "/admin"
   }, 
+  {
+    path: "/new-taller-page",
+    name: "Nuevo Taller",
+    icon: AddBoxIcon,
+    component: NewTallerPage,
+    layout: "/admin"
+  },
 ];
 
 export default dashboardRoutes;

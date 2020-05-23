@@ -100,7 +100,7 @@ class NewTeamPage extends React.Component {
                                     className={`${classes.cardHeader} ${classes.textCenter}`}
                                     color="primary"
                                 >
-                                    <h4 className={classes.cardTitle}>Crear Club</h4>
+                                    <h4 className={classes.cardTitle}>Crear Equipo Deportivo</h4>
                                 </CardHeader>
                                 <br></br>
                                 <CardBody>

@@ -18,7 +18,7 @@ import routes from "routes.js";
 
 import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboardStyle.jsx";
 
-import image from "assets/img/sidebar-2.jpg";
+import image from "assets/img/clubdanza.jpg";
 import logo from "assets/img/reactlogo.png";
 
 const { REACT_APP_SERVER_URL } = process.env;
