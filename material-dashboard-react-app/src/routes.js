@@ -11,6 +11,7 @@ import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
 import ForgotPass from "views/Pages/ForgotPass.jsx"
 import UpdatePass from "views/Pages/changePass.jsx"
+import NewClubPage from "./views/Pages/NewClubPage";
 
 const dashboardRoutes = [
   {
@@ -54,7 +55,14 @@ const dashboardRoutes = [
     icon: "vpn_key",
     component: UpdatePass,
     layout: "/auth"
-  }
+  },
+  {
+    path: "/new-club-page",
+    name: "Nuevo Club",
+    icon: "vpn_key",
+    component: NewClubPage,
+    layout: "/auth"
+  }, 
 ];
 
 export default dashboardRoutes;
