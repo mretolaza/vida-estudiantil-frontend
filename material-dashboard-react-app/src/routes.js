@@ -12,6 +12,9 @@ import RegisterPage from "views/Pages/RegisterPage.jsx";
 import ForgotPass from "views/Pages/ForgotPass.jsx"
 import UpdatePass from "views/Pages/changePass.jsx"
 import NewClubPage from "./views/Pages/NewClubPage";
+import AlertPage from "views/Pages/alertPage.jsx";
+import AddBoxIcon from '@material-ui/icons/AddBox';
+import AnnouncementIcon from '@material-ui/icons/Announcement';
 
 const dashboardRoutes = [
   {
@@ -59,10 +62,17 @@ const dashboardRoutes = [
   {
     path: "/new-club-page",
     name: "Nuevo Club",
-    icon: "vpn_key",
+    icon: AddBoxIcon,
     component: NewClubPage,
-    layout: "/auth"
+    layout: "/admin"
   }, 
+  {
+    path: "/alert-page",
+    name: "Alerta de Permisos",
+    icon: AnnouncementIcon,
+    component: AlertPage,
+    layout: "/admin"
+  },
 ];
 
 export default dashboardRoutes;
