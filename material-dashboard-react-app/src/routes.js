@@ -13,6 +13,7 @@ import ForgotPass from "views/Pages/ForgotPass.jsx"
 import UpdatePass from "views/Pages/changePass.jsx"
 import NewClubPage from "./views/Pages/NewClubPage";
 import AlertPage from "views/Pages/alertPage.jsx";
+import NewTeamPage from "views/Pages/NewTeamPage.jsx";
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 
@@ -73,6 +74,13 @@ const dashboardRoutes = [
     component: AlertPage,
     layout: "/admin"
   },
+  {
+    path: "/new-team-page",
+    name: "Nuevo Equipo",
+    icon: AddBoxIcon,
+    component: NewTeamPage,
+    layout: "/admin"
+  }, 
 ];
 
 export default dashboardRoutes;
