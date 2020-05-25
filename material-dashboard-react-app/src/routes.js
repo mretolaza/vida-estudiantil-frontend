@@ -16,6 +16,7 @@ import NewEventPage from "./views/Pages/NewEventPage";
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import NewTallerPage from "./views/Pages/newTallerPage";
+import ViewAsociacion from "./views/TableList/asociacion"
 
 const dashboardRoutes = [
   {
@@ -79,6 +80,13 @@ const dashboardRoutes = [
     name: "Nuevo Evento",
     icon: AddBoxIcon,
     component: NewEventPage,
+    layout: "/admin"
+  },
+  {
+    path: "/view-asociacion",
+    name: "Ver Asociacion",
+    icon: AddBoxIcon,
+    component: ViewAsociacion,
     layout: "/admin"
   },
 ];
