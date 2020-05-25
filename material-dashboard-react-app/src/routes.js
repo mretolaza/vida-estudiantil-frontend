@@ -9,8 +9,6 @@ import UserProfile from "views/UserProfile/UserProfile.jsx";
 // core components/views for Auth layout
 import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
-import ForgotPass from "views/Pages/ForgotPass.jsx"
-import UpdatePass from "views/Pages/changePass.jsx"
 import NewClubPage from "./views/Pages/NewClubPage";
 import AlertPage from "views/Pages/alertPage.jsx";
 import NewTeamPage from "views/Pages/NewTeamPage.jsx";
@@ -46,20 +44,6 @@ const dashboardRoutes = [
     name: "Registro",
     icon: Register,
     component: RegisterPage,
-    layout: "/auth"
-  },
-  {
-    path: "/forgot-pass-page",
-    name: "Olvidé mi contraseña",
-    icon: "vpn_key",
-    component: ForgotPass,
-    layout: "/auth"
-  }, 
-  {
-    path: "/chance-pass-page",
-    name: "Actualizar mi contraseña",
-    icon: "vpn_key",
-    component: UpdatePass,
     layout: "/auth"
   },
   {
