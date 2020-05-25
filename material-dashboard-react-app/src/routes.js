@@ -85,7 +85,7 @@ const dashboardRoutes = [
   {
     path: "/view-asociacion",
     name: "Ver Asociacion",
-    icon: AddBoxIcon,
+    icon: "content_paste",
     component: ViewAsociacion,
     layout: "/admin"
   },
