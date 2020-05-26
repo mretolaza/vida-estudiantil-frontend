@@ -9,8 +9,17 @@ import UserProfile from "views/UserProfile/UserProfile.jsx";
 // core components/views for Auth layout
 import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
-import ForgotPass from "views/Pages/ForgotPass.jsx"
-import UpdatePass from "views/Pages/changePass.jsx"
+import NewClubPage from "./views/Pages/NewClubPage";
+import AlertPage from "views/Pages/alertPage.jsx";
+import NewTeamPage from "views/Pages/NewTeamPage.jsx";
+import NewEventPage from "./views/Pages/NewEventPage";
+import NewActivity from "./views/Pages/NewActivity";
+import AddBoxIcon from '@material-ui/icons/AddBox';
+import AnnouncementIcon from '@material-ui/icons/Announcement';
+import NewTallerPage from "./views/Pages/newTallerPage";
+import ViewAsociacion from "./views/TableList/asociacion"
+import viewDeporte from "./views/TableList/deporte"
+import viewClub from "./views/TableList/club"
 
 const dashboardRoutes = [
   {
@@ -42,19 +51,68 @@ const dashboardRoutes = [
     layout: "/auth"
   },
   {
-    path: "/forgot-pass-page",
-    name: "Olvidé mi contraseña",
-    icon: "vpn_key",
-    component: ForgotPass,
-    layout: "/auth"
+    path: "/new-club-page",
+    name: "Nuevo Club",
+    icon: AddBoxIcon,
+    component: NewClubPage,
+    layout: "/admin"
   }, 
   {
-    path: "/chance-pass-page",
-    name: "Actualizar mi contraseña",
-    icon: "vpn_key",
-    component: UpdatePass,
-    layout: "/auth"
-  }
+    path: "/alert-page",
+    name: "Alerta de Permisos",
+    icon: AnnouncementIcon,
+    component: AlertPage,
+    layout: "/admin"
+  },
+  {
+    path: "/new-team-page",
+    name: "Nuevo Equipo",
+    icon: AddBoxIcon,
+    component: NewTeamPage,
+    layout: "/admin"
+  }, 
+  {
+    path: "/new-taller-page",
+    name: "Nuevo Taller",
+    icon: AddBoxIcon,
+    component: NewTallerPage,
+    layout: "/admin"
+  },
+  {
+    path: "/new-event-page",
+    name: "Nuevo Evento",
+    icon: AddBoxIcon,
+    component: NewEventPage,
+    layout: "/admin"
+  },
+  {
+    path: "/new-activity",
+    name: "Nueva Actividad",
+    icon: AddBoxIcon,
+    component: NewActivity,
+    layout: "/admin"
+  },
+  {
+    path: "/view-asociacion",
+    name: "Ver Asociacion",
+    icon: "content_paste",
+    component: ViewAsociacion,
+    layout: "/admin"
+  },
+  {
+    path: "/view-team",
+    name: "Ver Equipo de deporte",
+    icon: "content_paste",
+    component: viewDeporte,
+    layout: "/admin"
+  },
+  {
+    path: "/view-club",
+    name: "Ver Club",
+    icon: "content_paste",
+    component: viewClub,
+    layout: "/admin"
+  },
 ];
 
 export default dashboardRoutes;
