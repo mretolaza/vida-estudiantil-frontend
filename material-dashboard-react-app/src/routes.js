@@ -17,6 +17,8 @@ import AddBoxIcon from '@material-ui/icons/AddBox';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import NewTallerPage from "./views/Pages/newTallerPage";
 import ViewAsociacion from "./views/TableList/asociacion"
+import viewDeporte from "./views/TableList/deporte"
+import viewClub from "./views/TableList/club"
 
 const dashboardRoutes = [
   {
@@ -87,6 +89,20 @@ const dashboardRoutes = [
     name: "Ver Asociacion",
     icon: "content_paste",
     component: ViewAsociacion,
+    layout: "/admin"
+  },
+  {
+    path: "/view-asociacion",
+    name: "Ver Equipo de deporte",
+    icon: "content_paste",
+    component: viewDeporte,
+    layout: "/admin"
+  },
+  {
+    path: "/view-asociacion",
+    name: "Ver Club",
+    icon: "content_paste",
+    component: viewClub,
     layout: "/admin"
   },
 ];
