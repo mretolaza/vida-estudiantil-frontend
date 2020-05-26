@@ -46,22 +46,22 @@ function TableList(props) {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Socios</h4>
+            <h4 className={classes.cardTitleWhite}>Asistencia Clubes</h4>
             <p className={classes.cardCategoryWhite}>
-             Resumen de los participantes del Club actual
+             Danza Primer Ciclo 2020
             </p>
           </CardHeader>
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Nombre", "Año", "Activo",  "%Asistencia", "Acciones"]}
+              tableHead={["Nombre", "Año", "Activo",  "% Asistencia", "Acciones"]}
               tableData={[
-                ["Dakota Rice", "Segundo año", "Si", "45%", "Editar   Eliminar"],
-                ["Minerva Hooper", "Tercer año", "Si","20%", "Editar   Eliminar"],
-                ["Sage Rodriguez", "Primer año", "Si","35%", "Editar   Eliminar"],
-                ["Philip Chaney",  "Primer año", "Si","50%", "Editar   Eliminar"],
-                ["Doris Greene",  "uinto año", "Si","100%", "Editar   Eliminar"],
-                ["Mason Porter",  "Cuarto año", "Si","%78", "Editar   Eliminar"]
+                ["Carol Dardon", "Segundo año", "Si", "95%", "Editar   Eliminar"],
+                ["Camila Gonzalez", "Tercer año", "Si","90%", "Editar   Eliminar"],
+                ["Diana de Leon", "Tercer año", "Si","80%", "Editar   Eliminar"],
+                ["Estefania Arriola",  "Segundo año", "Si","50%", "Editar   Eliminar"],
+                ["Zoe Lopez",  "Cuarto año", "Si","60%", "Editar   Eliminar"],
+                ["Catherine Valenzuela",  "Cuarto año", "Si","30%", "Editar   Eliminar"]
               ]}
             />
           </CardBody>

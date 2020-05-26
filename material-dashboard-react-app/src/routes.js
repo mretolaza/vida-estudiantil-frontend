@@ -100,14 +100,14 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/view-asociacion",
+    path: "/view-team",
     name: "Ver Equipo de deporte",
     icon: "content_paste",
     component: viewDeporte,
     layout: "/admin"
   },
   {
-    path: "/view-asociacion",
+    path: "/view-club",
     name: "Ver Club",
     icon: "content_paste",
     component: viewClub,

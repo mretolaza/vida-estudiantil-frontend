@@ -142,12 +142,12 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Ingreso de reportes</h4>
+                <h4 className={classes.cardTitle}>Participación de Estudiantes</h4>
                 <p className={classes.cardCategory}>
                   <span className={classes.successText}>
                     <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                   </span>{" "}
-                  Incremento de actividad del día de hoy
+                  Incremento de estudiantes desde 2015
                 </p>
               </CardBody>
               <CardFooter chart>
@@ -194,9 +194,9 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Reportes de horas de beca</h4>
+                <h4 className={classes.cardTitle}>Torneos Internos</h4>
                 <p className={classes.cardCategory}>
-                  Reportes completados por alumnos
+                  Primer ciclo 2020
                 </p>
               </CardBody>
               <CardFooter chart>

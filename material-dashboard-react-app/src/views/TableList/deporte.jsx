@@ -46,22 +46,22 @@ function TableList(props) {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Socios</h4>
+            <h4 className={classes.cardTitleWhite}>Torneos Internos</h4>
             <p className={classes.cardCategoryWhite}>
-             Resumen de los participantes del equipo actual
+             Primer Ciclo 2020
             </p>
           </CardHeader>
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Nombre", "Año", "Activo",  "%Asistencia", "Acciones"]}
+              tableHead={["Nombre", "Año", "Activo",  "Torneo", "Acciones"]}
               tableData={[
-                ["Dakota Rice", "Segundo año", "Si", "45%", "Editar   Eliminar"],
-                ["Minerva Hooper", "Tercer año", "Si","20%", "Editar   Eliminar"],
-                ["Sage Rodriguez", "Primer año", "Si","35%", "Editar   Eliminar"],
-                ["Philip Chaney",  "Primer año", "Si","50%", "Editar   Eliminar"],
-                ["Doris Greene",  "uinto año", "Si","100%", "Editar   Eliminar"],
-                ["Mason Porter",  "Cuarto año", "Si","%78", "Editar   Eliminar"]
+                ["Rodrigo Garoz", "Tercer año", "Si", "Baloncesto", "Editar   Eliminar"],
+                ["Silvio Orozco", "Tercer año", "Si","Futsala", "Editar   Eliminar"],
+                ["Jose Miguel", "Tercer año", "Si","Futsala", "Editar   Eliminar"],
+                ["Ivan Porras",  "Cuarto año", "Si","Futsala", "Editar   Eliminar"],
+                ["Ennio Perez",  "N/A", "Si","Baloncesto", "Editar   Eliminar"],
+                ["Alby Aguilar",  "N/A", "Si","Voleibol", "Editar   Eliminar"]
               ]}
             />
           </CardBody>
