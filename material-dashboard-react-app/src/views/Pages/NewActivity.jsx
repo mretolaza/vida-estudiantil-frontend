@@ -100,7 +100,7 @@ class NewActivity extends React.Component {
                                     className={`${classes.cardHeader} ${classes.textCenter}`}
                                     color="primary"
                                 >
-                                    <h4 className={classes.cardTitle}>Crear Evento</h4>
+                                    <h4 className={classes.cardTitle}>Crear Actividad</h4>
                                 </CardHeader>
                                 <br></br>
                                 <CardBody>
