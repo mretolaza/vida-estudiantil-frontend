@@ -13,6 +13,7 @@ import NewClubPage from "./views/Pages/NewClubPage";
 import AlertPage from "views/Pages/alertPage.jsx";
 import NewTeamPage from "views/Pages/NewTeamPage.jsx";
 import NewEventPage from "./views/Pages/NewEventPage";
+import NewActivity from "./views/Pages/NewActivity";
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import NewTallerPage from "./views/Pages/newTallerPage";
@@ -82,6 +83,13 @@ const dashboardRoutes = [
     name: "Nuevo Evento",
     icon: AddBoxIcon,
     component: NewEventPage,
+    layout: "/admin"
+  },
+  {
+    path: "/new-activity",
+    name: "Nueva Actividad",
+    icon: AddBoxIcon,
+    component: NewActivity,
     layout: "/admin"
   },
   {
